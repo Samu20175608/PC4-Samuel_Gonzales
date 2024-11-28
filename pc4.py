@@ -40,7 +40,7 @@ sidebar = st.sidebar
 # Pero, a diferencia de st.markdown, el texto estará alineado a la izquierda y no podrás cambiar el color del texto.
 
 # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-st.markdown("<h1 style='text-align: center;'>SIGUIENDO A SIGUAS :3</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Los misterios de la fe</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Nombre de tu blog</h1>: Esto es una cadena de código HTML. 
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web, y 
@@ -60,7 +60,7 @@ col1, col2 = st.columns(2)
 # Las columnas creadas se asignan a las variables col1 y col2.
 
 # En la primera columna colocamos la imagen
-col1.image("foto.jpg", caption='Mi avatar', width=300)
+col1.image("p.jpg", caption='Let it be', width=300)
 
 # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
 # La función image toma como primer argumento la ruta de la imagen que se va a mostrar. 
@@ -73,8 +73,8 @@ col1.image("foto.jpg", caption='Mi avatar', width=300)
 # ¿Qué te gustaría hacer en el futuro?, ¿Qué te gusta hacer en tu tiempo libre?
 
 texto = """
-Mi nombre es Manuel Armando Siguas Solís, mejor conocido en la universidad por mi primer apellido, “Siguas”. Soy un estudiante de 20 años quien lleva su sexto ciclo en la Pontificia Universidad Católica del Perú, comenzando su vida en facultad. Específicamente, estudio la carrera de Comunicación Audiovisual perteneciente a la Facultad de Ciencias y Artes de La Comunicación. Lo que más disfruto de mi carrera es el aprendizaje de producción de contenido audiovisual dado a que es algo que me ha interesado desde niño y en mis propios ratos libres me acompaña incluso. Me gustaría dedicarme a la producción de series, películas o videos en el futuro, destacarme en ello y aún más en el futuro estudiar también actuación de forma profesional para poder actuar en mis propias producciones. Lo que más disfruto hacer en mi tiempo libre es técnicamente hacer lo que he mencionado, pero de forma autodidacta y amateur en mi canal de YouTube con más de 18 mil suscriptores, en el cual me dedico a hacer fan doblajes de cómics y animaciones relacionadas a mis franquicias favoritas.
-"""
+ Mi nombre es Samuel Arturo Gonzales Sullón. Soy estudiante de periodismo de la Pontificia Universidad Católica del Perú (PUCP) y debo decir que lo que más valoro de mi carrera es la libertad que me ha sido otorgada para poder expresar problemáticas sociales, espirituales y psicológicas que comúnmente permanecen soterradas en la esfera pública. En el futuro, tengo el propósito de contribuir, a través de plataformas digitales y otros medios de comunicación, a la difusión de la fe cristiana. Más del 80% de la población del Perú es católica y, sin embargo, la devoción es un concepto que ha quedado limitado a festividades y rituales tradicionales sin el debido entendimiento de lo que realmente es la fe. Considero que las enseñanzas de Cristo Jesús son necesarias y transformadoras en este mundo contemporáneo, en el que sobre todo la juventud se encuentra en una crisis de salud mental.
+ """
 
 # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
 # Mostramos el texto
@@ -96,7 +96,7 @@ col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>
 # ¿Qué te gustaría hacer con la programación en el futuro? 
 
 # Agregamos un subtítulo
-st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻 en PENCOM :'3</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a programar</h2>", unsafe_allow_html=True)
 
 # <h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻</h2>: Esta es una cadena de código HTML.
 # La etiqueta <h2> se utiliza para el encabezado secundario de una página web.
@@ -109,8 +109,8 @@ st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a progra
 
 # Agregar un  texto para la respuesta
 texto_2 = """
-Al principio me sentí algo preocupado debido a que la programación digital con codificaciones específicas nunca ha sido un área en el que destacara mucho, principalmente en el colegio, no obstante, esas tensiones se fueron aliviando conforme comprobé que Phyton es un sistema sumamente accesible y amigable para el programador principiante. La programación me ha enseñado principalmente a que existe más de una solución ante diversas problemáticas, así como a saber comunicarme de forma específica con la inteligencia artificial para que esta pueda seguir mis órdenes. Lo que no me gusta tanto de la programación es que se debe seguir una serie de lenguajes y códigos de forma estricta y sin el más mínimo error o el sistema falla y el proyecto colapsa, no obstante, me ha ayudado para ser más observador y atento al momento de seguir indicaciones. En el futuro me gustaría poder programar alguna página o plataforma personalizada que me permita seguir desarrollando el concepto de mi canal.
-"""
+ Al principio fue difícil para mí
+ aprender el lenguaje de programación básico, pero es cierto que tanto el profesor como la jefa de práctica del curso siempre se mostraron comprensivos con nuestras limitaciones y nos brindaron la oportunidad de subsanar notas y también de depurar el conocimiento aprendido a través de varias asesorías. Personalmente, la programación ha enriquecido mi conocimiento en Dios, puesto que nosotros, al programar, estamos creando comandos, generando el diseño de un submundo en el que las personas podrán interactuar. Entendí que la realidad misma posee un diseño absoluto y perfecto; y es cierto que donde existe orden y diseño absoluto, debe existir necesariamente una mente soberana y omnisciente. Específicamente en cuanto a mi carrera, me gustaría aplicar el conocimiento aprendido en este curso para crear páginas web con bases de datos sobre problemáticas poco atendidas como el suicidio, la adicción a las drogas, la adicción a la pornografía, la ansiedad social, etc. Me gustaría poder ayudar a mis semejantes a identificar los principales factores que desencadenan estos trastornos"""
 
 # Mostramos el texto
 st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
@@ -134,12 +134,12 @@ st.markdown("<h2 style='text-align: center;'>Explicación de un tema de las clas
 # unsafe_allow_html=True: Este es un argumento opcional en la función markdown.
 
 # Agregamos un video a la aplicación web ( menor a 20 MB)
-st.video("pc3.mp4")
+#st.video("pc3.mp4")
 # st.video("ppc-2024-1.mp4"): Esta línea está agregando un video a la aplicación web.
 
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://drive.google.com/file/d/152MfCeko058XBWpDZcCWiVuVfICFaG14/view?usp=sharing" target="_blank"><button>Click para ver el mismo video de arriba pero en drive :V</button></a>'
+enlace = f'<a href="https://drive.google.com/file/d/1my_nxlrJKF6rLIhFk17VwYrJ5tymfr7T/view?usp=sharing" target="_blank"><button>Click para ver mi video-explicación en drive :V</button></a>'
 st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
@@ -151,7 +151,7 @@ st.markdown(enlace, unsafe_allow_html=True)
 
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>Mis gráficos favoritos de las PCs</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Mis gráficos favoritos</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Los análisis de Ellie</h1>: Esta es una cadena de código HTML.
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web.
