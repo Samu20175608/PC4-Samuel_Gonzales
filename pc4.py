@@ -109,8 +109,7 @@ st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a progra
 
 # Agregar un  texto para la respuesta
 texto_2 = """
- Al principio fue difícil para mí
- aprender el lenguaje de programación básico, pero es cierto que tanto el profesor como la jefa de práctica del curso siempre se mostraron comprensivos con nuestras limitaciones y nos brindaron la oportunidad de subsanar notas y también de depurar el conocimiento aprendido a través de varias asesorías. Personalmente, la programación ha enriquecido mi conocimiento en Dios, puesto que nosotros, al programar, estamos creando comandos, generando el diseño de un submundo en el que las personas podrán interactuar. Entendí que la realidad misma posee un diseño absoluto y perfecto; y es cierto que donde existe orden y diseño absoluto, debe existir necesariamente una mente soberana y omnisciente. Específicamente en cuanto a mi carrera, me gustaría aplicar el conocimiento aprendido en este curso para crear páginas web con bases de datos sobre problemáticas poco atendidas como el suicidio, la adicción a las drogas, la adicción a la pornografía, la ansiedad social, etc. Me gustaría poder ayudar a mis semejantes a identificar los principales factores que desencadenan estos trastornos"""
+ Al principio fue difícil para mí  aprender el lenguaje de programación básico, pero es cierto que tanto el profesor como la jefa de práctica del curso siempre se mostraron comprensivos con nuestras limitaciones y nos brindaron la oportunidad de subsanar notas y también de depurar el conocimiento aprendido a través de varias asesorías. Personalmente, la programación ha enriquecido mi conocimiento en Dios, puesto que nosotros, al programar, estamos creando comandos, generando el diseño de un submundo en el que las personas podrán interactuar. Entendí que la realidad misma posee un diseño absoluto y perfecto; y es cierto que donde existe orden y diseño absoluto, debe existir necesariamente una mente soberana y omnisciente. Específicamente en cuanto a mi carrera, me gustaría aplicar el conocimiento aprendido en este curso para crear páginas web con bases de datos sobre problemáticas poco atendidas como el suicidio, la adicción a las drogas, la adicción a la pornografía, la ansiedad social, etc. Me gustaría poder ayudar a mis semejantes a identificar los principales factores que desencadenan estos trastornos"""
 
 # Mostramos el texto
 st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
@@ -159,10 +158,10 @@ sidebar.markdown("<h1 style='text-align: center;'>Mis gráficos favoritos</h1>",
 # El texto dentro de las etiquetas <h1> ("Los análisis de Ellie") es el contenido del encabezado.
 
 # Creamos una lista de gráficos
-graficos = ['¿Cómo le fue a la Vecchia Signora?', 'Goles promedio Milan vs. Fiore', 'Frecuencia de palabras']
+graficos = ['G1: word count', 'Tarjetas Rojas equipos italianos', 'Goles Inter']
 
 # Creamos un cuadro de selección en la barra lateral
-grafico_seleccionado = sidebar.selectbox('Selecciónese un gráfico 7u7', graficos)
+grafico_seleccionado = sidebar.selectbox('Seleccione un gráfico', graficos)
 # El cuadro de selección se crea con la función selectbox.
 # El primer argumento es el texto que se muestra en el cuadro de selección.
 # El segundo argumento es una lista de opciones que se pueden seleccionar.
@@ -172,17 +171,17 @@ grafico_seleccionado = sidebar.selectbox('Selecciónese un gráfico 7u7', grafic
 # La función selectbox se utiliza para crear un cuadro de selección en la barra lateral.
 
 # Mostramos el gráfico seleccionado
-if grafico_seleccionado == '¿Cómo le fue a la Vecchia Signora?':
+if grafico_seleccionado == 'G1: word count':
     sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Durante la temporada 2022/23 en la Serie A Italiana en cuanto a su cuota goleadora. Se muestran sus 38 goles en condición de local y sus 18 goles en condición de visitante</div>", unsafe_allow_html=True)
-    sidebar.image("vechia.png", caption='Vecchia Signora', width=500)
+    sidebar.image("1.jpg", caption='G1: word count', width=500)
     pass
-elif grafico_seleccionado == 'Goles promedio Milan vs. Fiore':
+elif grafico_seleccionado == 'Tarjetas Rojas equipos italianos':
     sidebar.markdown("<div style='text-align: justify'>El gráfico se encuentra una comparación entre el promedio de goles en condición de visitante entre el AC Milán y la Fiorentina, mostrando que ambos obtuvieron un 50%..</div>", unsafe_allow_html=True)
-    sidebar.image("promedio.png", caption='Milan vs Fiore Comparación', width=500)
+    sidebar.image("2.jpg", caption='Tarjetas Rojas equipos italianos', width=500)
     pass
-elif grafico_seleccionado == 'Frecuencia de palabras':
+elif grafico_seleccionado == 'Goles Inters':
     sidebar.markdown("<div style='text-align: justify'>Este gráfico se encarga de contabilizar y comparar la cantidad de veces en que se mencionó la palabra “paro”, “Dina”, “Bukele”, “delincuencia”, “criminales” y “ley” en un texto específico que se nos fue otorgado. Brindando como resultado que la palabra más mencionada fue “paro” con un total de 3 veces.</div>", unsafe_allow_html=True)
-    sidebar.image("palabras.png", caption='Mapa de las lenguas sudamericanas', width=500)
+    sidebar.image("3.jpg", caption='Goles Inter', width=500)
     pass
 
 # if grafico_seleccionado == 'Gráfico de Macroareas': Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
