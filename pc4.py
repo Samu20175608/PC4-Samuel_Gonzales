@@ -138,7 +138,7 @@ st.markdown("<h2 style='text-align: center;'>Explicación de un tema de las clas
 
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://drive.google.com/file/d/1my_nxlrJKF6rLIhFk17VwYrJ5tymfr7T/view?usp=sharing" target="_blank"><button>Click para ver mi video-explicación en drive :V</button></a>'
+enlace = f'<a href="https://drive.google.com/file/d/1my_nxlrJKF6rLIhFk17VwYrJ5tymfr7T/view?usp=sharing" target="_blank"><button>Click para ver mi video-explicación en drive</button></a>'
 st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
@@ -172,15 +172,15 @@ grafico_seleccionado = sidebar.selectbox('Seleccione un gráfico', graficos)
 
 # Mostramos el gráfico seleccionado
 if grafico_seleccionado == 'G1: word count':
-    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Durante la temporada 2022/23 en la Serie A Italiana en cuanto a su cuota goleadora. Se muestran sus 38 goles en condición de local y sus 18 goles en condición de visitante</div>", unsafe_allow_html=True)
+    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>este gráfico muestra un conteo de palabras que hicimos en una PC. Al principio me pareció un poco complicado hacerlo pero luego me gustó aprender</div>", unsafe_allow_html=True)
     sidebar.image("1.jpg", caption='G1: word count', width=500)
     pass
 elif grafico_seleccionado == 'Tarjetas Rojas equipos italianos':
-    sidebar.markdown("<div style='text-align: justify'>El gráfico se encuentra una comparación entre el promedio de goles en condición de visitante entre el AC Milán y la Fiorentina, mostrando que ambos obtuvieron un 50%..</div>", unsafe_allow_html=True)
+    sidebar.markdown("<div style='text-align: justify'>Como soy hincha del futbol, me pareció interesante ver la cantidad de tarjetas rojas de los equipos italianos.</div>", unsafe_allow_html=True)
     sidebar.image("2.jpg", caption='Tarjetas Rojas equipos italianos', width=500)
     pass
-elif grafico_seleccionado == 'Goles Inters':
-    sidebar.markdown("<div style='text-align: justify'>Este gráfico se encarga de contabilizar y comparar la cantidad de veces en que se mencionó la palabra “paro”, “Dina”, “Bukele”, “delincuencia”, “criminales” y “ley” en un texto específico que se nos fue otorgado. Brindando como resultado que la palabra más mencionada fue “paro” con un total de 3 veces.</div>", unsafe_allow_html=True)
+elif grafico_seleccionado == 'Goles Inter':
+    sidebar.markdown("<div style='text-align: justify'>Este graifo  muestra los goles del inter en lcoal y en visitante</div>", unsafe_allow_html=True)
     sidebar.image("3.jpg", caption='Goles Inter', width=500)
     pass
 
